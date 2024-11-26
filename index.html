@@ -23,23 +23,39 @@
             width: 80%;
             max-width: 1000px;
         }
-        nav, .notes-section {
+        .section {
             background-color: #333;
             color: white;
             padding: 20px;
             border-radius: 8px;
+            margin-bottom: 20px;
         }
-        nav h2, .notes-section h2 {
+        .section h2 {
             color: white;
             margin-bottom: 20px;
         }
-        a {
+        .section a {
             color: white;
             text-decoration: none;
             padding: 10px 15px;
             display: block;
         }
-        a:hover {
+        .section a:hover {
+            background-color: #555;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
             background-color: #555;
         }
     </style>
@@ -47,20 +63,56 @@
 <body>
     <h1>TECH 4020</h1>
     <div class="container">
-        <nav>
-            <h2>Class Notes Markmaps</h2>
-            <a href="W1C1.html">Week 1 Class 1</a>
-            <a href="W1C2.html">Week 1 Class 2</a>
-            <a href="W2C1.html">Week 2 Class 1</a>
-            <a href="W4C1.html">Week 4 Class 1</a>
-        </nav>
-        <div class="notes-section">
-            <h2>Textual Notes</h2>
-            <a href="../p/tech4020-w1c1/">Week 1 Class 1</a>
-            <a href="../p/tech4020-w1c2/">Week 1 Class 2</a>
-            <a href="../p/tech4020-w2c1/">Week 2 Class 1</a>
-            <a href="../p/tech4020-w4c1/">Week 4 Class 1</a>
-            <!-- Add more links here following the same pattern -->
+        <!-- Week 1 Class 1 -->
+        <div class="section">
+            <h2><a href="../p/tech4020-w1c1/">Week 1 Class 1</a></h2>
+            <div class="button-container">
+                <a href="W1C1.html">
+                    <button>Visual Notes <img src="mindmap.svg" alt="Visual Notes"></button>
+                </a>
+                <a href="../p/tech4020-w1c1/">
+                    <button>Textual Notes <img src="file-text.svg" alt="Textual Notes"></button>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Week 1 Class 2 -->
+        <div class="section">
+            <h2><a href="../p/tech4020-w1c2/">Week 1 Class 2</a></h2>
+            <div class="button-container">
+                <a href="W1C2.html">
+                    <button>Visual Notes <img src="mindmap.svg" alt="Visual Notes"></button>
+                </a>
+                <a href="../p/tech4020-w1c2/">
+                    <button>Textual Notes <img src="file-text.svg" alt="Textual Notes"></button>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Week 2 Class 1 -->
+        <div class="section">
+            <h2><a href="../p/tech4020-w2c1/">Week 2 Class 1</a></h2>
+            <div class="button-container">
+                <a href="W2C1.html">
+                    <button>Visual Notes <img src="mindmap.svg" alt="Visual Notes"></button>
+                </a>
+                <a href="../p/tech4020-w2c1/">
+                    <button>Textual Notes <img src="file-text.svg" alt="Textual Notes"></button>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Week 4 Class 1 -->
+        <div class="section">
+            <h2><a href="../p/tech4020-w4c1/">Week 4 Class 1</a></h2>
+            <div class="button-container">
+                <a href="W4C1.html">
+                    <button>Visual Notes <img src="mindmap.svg" alt="Visual Notes"></button>
+                </a>
+                <a href="../p/tech4020-w4c1/">
+                    <button>Textual Notes <img src="file-text.svg" alt="Textual Notes"></button>
+                </a>
+            </div>
         </div>
     </div>
 </body>
