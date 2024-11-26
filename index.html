@@ -10,34 +10,58 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             background-color: #f4f4f4;
         }
-        nav {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
+        nav, .notes-section {
             background-color: #333;
+            color: white;
             padding: 20px;
             border-radius: 8px;
         }
-        nav a {
+        nav h2, .notes-section h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        a {
             color: white;
             text-decoration: none;
             padding: 10px 15px;
             display: block;
         }
-        nav a:hover {
+        a:hover {
             background-color: #555;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <h2>Class Notes Markmaps</h2>
-        <a href="W1C1.html">Week 1 Class 1</a>
-        <a href="W1C2.html">Week 1 Class 2</a>
-        <a href="W2C1.html">Week 2 Class 1</a>
-        <a href="W4C1.html">Week 4 Class 1</a>
-    </nav>
+    <div class="container">
+        <h1>TECH 4020</h1>
+        <nav>
+            <h2>Class Notes Markmaps</h2>
+            <a href="W1C1.html">Week 1 Class 1</a>
+            <a href="W1C2.html">Week 1 Class 2</a>
+            <a href="W2C1.html">Week 2 Class 1</a>
+            <a href="W4C1.html">Week 4 Class 1</a>
+        </nav>
+        <div class="notes-section">
+            <h2>Textual Notes</h2>
+            <a href="../p/tech4020-w1c1/">Week 1 Class 1</a>
+            <a href="../p/tech4020-w1c2/">Week 1 Class 2</a>
+            <a href="../p/tech4020-w2c1/">Week 2 Class 1</a>
+            <a href="../p/tech4020-w4c1/">Week 4 Class 1</a>
+            <!-- Add more links here following the same pattern -->
+        </div>
+    </div>
 </body>
 </html>
